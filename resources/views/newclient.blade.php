@@ -37,6 +37,10 @@
 
         </div>
         <div id="main" class="centered">
+            <p>
+                Please fill out the form below if you're looking for a new editor or ghostwriter. We'll send you our 
+                new client guide that explains our onboarding process and what our workflow is for each service.
+            </p>
 
             @if(session()->has('success'))
                 <p>
@@ -70,6 +74,12 @@
                     <tr>
                         <td>Tell Us about Your Book</td>
                         <td><textarea name="message"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="signup">Opt out of marketing emails?</label>
+                            <input type="checkbox" name="signup" id="signup" value="1">
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
